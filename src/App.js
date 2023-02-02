@@ -27,7 +27,7 @@ function App() {
           </div>
         </div>
         <div>
-          <label>Tax (%) {taxAmount}</label>
+          <label>Tax (%) {taxAmount} €</label>
           <div>
             <input
               onChange={(e) => setTaxPercentage(e.target.value)}
@@ -36,13 +36,13 @@ function App() {
           </div>
         </div>
         <div>
-          <label>Pension (%) {pensionAmount}</label>
+          <label>Pension (%) {pensionAmount} €</label>
           <div>
             <select onChange={(e) => setPensionPercentage(e.target.value)}><Dropdown /></select>
           </div>
         </div>
         <div>
-          <label>Insurance (%) {insuranceAmount}</label>
+          <label>Insurance (%) {insuranceAmount} €</label>
           <div>
           <select onChange={(e) => setInsurancePercentage(e.target.value)}><Dropdown /></select>
           </div>
@@ -50,7 +50,7 @@ function App() {
         <div>
           <label>Your salary after payments</label>
           <div>
-            <output>{result}</output>
+            <output>{result} €</output>
           </div>
         </div>
         <button>Calculate</button>
